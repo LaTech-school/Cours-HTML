@@ -1,0 +1,27 @@
+Creer la structure de votre CV 
+
+Dans l'entête de page :
+ - Votre Nom en titre principal
+ - Un lien vers votre adresse email
+ - Un lien vers votre Numero de téléphone
+ - Un lien vers votre profil LinkedIn
+
+Dans le contenu Principal 
+ - Une section dédiée aux compétences
+ - Une section dédiée aux formations
+ - Une section dédiée aux hobbies et divers skills
+
+Dans chacune des sections, un <article> par skills.
+Le titre de la section en H2, le titre des skills en H3
+Pour les hobbies, mettre un par ligne, ex:
+
+- hobby un<br>
+- hobby deux<br>
+- hobby trois<br>
+
+Dans le pied de page :
+ - Rappel du poste recherche "Developpeur Web Junior"
+ - Copyright avec année et nom 
+ - Un lien vers votre adresse email
+ - Un lien vers votre Numero de téléphone
+ - Un lien vers votre profil LinkedIn

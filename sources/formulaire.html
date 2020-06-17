@@ -30,18 +30,30 @@
                 e.g. : &lt;form method="GET"&gt;&lt;/form&gt; <br>
                 e.g. : &lt;form method="POST"&gt;&lt;/form&gt; <br>
 
-                Défini la méthode de requete HTTP pour transmettre les données au serveur.
+                Défini la méthode de requete HTTP pour transmettre les données au serveur.<br>
+                GET : Les données seront transmises au serveur via l'URI
+                <code>http://site.com?firstname=Bobby</code><br>
+
+                POST: Les données seront transmises au serveur via l'entete de la requete
+                <code>http://site.com</code><br>
 
                 <form method="get"></form>
+                <form method="post"></form>
+                <form action="site.com?param=value" method="post"></form>
             </dd>
             
-            <dt></dt>
-            <dd></dd>
-            
-            <dt></dt>
-            <dd></dd>
-            
+            <dt>novalidate</dt>
+            <dd>
+                e.g. : &lt;form novalidate&gt;&lt;/form&gt; <br>
+                Indique au navigateur de ne pas s'occupper du controle du formulaire.
+
+                <form novalidate></form>
+                <form novalidate="true"></form>
+                <form novalidate="novalidate"></form>
+            </dd>
         </dl>
     </section>
+
+    
 </body>
 </html>

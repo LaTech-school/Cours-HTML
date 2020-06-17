@@ -35,3 +35,9 @@ value               : la valeur associée au paramètre "param"
 #top                : Ancre vers l'element html qui possède id="top"
 #param=value 
 
+
+http://www.site.com:80/path/directory/file.html?param=value&other_param=new20%value#top
+ftp://user:pass@site.com:21
+
+
+:80 / :21           : Numero du port du logiciel sur le serveur

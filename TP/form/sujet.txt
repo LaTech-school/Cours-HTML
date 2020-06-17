@@ -1,0 +1,19 @@
+Créer un formulaire d'identification
+- Identifiant (email)
+- Mot de passe
+
+Créer un formulaire de création de compte 
+- Prénom
+- Nom
+- Sexe 
+- Date de naissance (liste de selection)
+- Email (servira d'identifiant)
+- Mot de passe
+- Confirmation du mot de passe
+
+Formulaire de contact 
+- Prénom
+- Nom
+- Email 
+- Objet (liste de selection)
+- Message

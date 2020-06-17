@@ -18,20 +18,44 @@
 
         <!-- Chemin Relatif -->
         <img src="assets/images/unicorn.jpg" alt="Une superbe licorne qui tape un DAB !" height="100">
-        <img src="./assets/images/unicorn.jpg" alt="Une superbe licorne qui tape un DAB !" height="100">
-        <img src="../TP/logo.png">
+        <!-- <img src="./assets/images/unicorn.jpg" alt="Une superbe licorne qui tape un DAB !" height="100">
+        <img src="../TP/logo.png"> -->
     </section>
 
 
     <section>
         <h2>Les médias audios</h2>
         
+        <audio src="./assets/audio/t-rex-roar.mp3" controls></audio>
+        <audio src="./assets/audio/t-rex-roar.wav" controls></audio>
+
+        <audio controls loop muted preload="none">
+            <source src="./assets/audio/t-rex-roar.wav" type="audio/wave">
+            <source src="./assets/audio/t-rex-roar.mp3" type="audio/mpeg">
+            <source src="./assets/audio/t-rex-roar.ogg" type="audio/ogg">
+            Votre navigateur est trop ancien pour prendre en charge les fichiers audio.
+        </audio>
     </section>
 
 
     <section>
         <h2>Les médias vidéos</h2>
         
+        Intégrer une video en 400px de large sur 280px de hauteur , afficher les controls
+        - un lecteur en autoplay et en boucle
+        - un lecteur en preload
+
+        <video controls height="400" width="280" autoplay loop>
+            <source src="./assets/video/movie.mp4" type="video/mp4">
+        </video>
+
+        <video controls height="400" width="280" preload>
+            <source src="./assets/video/movie.mp4" type="video/mp4">
+        </video>
+
+        <video controls height="400" width="280">
+            <source src="./assets/video/movie.mp4" type="video/mp4">
+        </video>
     </section>
 
 </body>

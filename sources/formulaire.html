@@ -4,6 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Les formumalaires</title>
+
+    <style>
+    .form-group {
+        margin-bottom: 2rem;
+    }
+    </style>
 </head>
 <body>
     
@@ -52,14 +58,15 @@
                 <form novalidate="novalidate"></form>
             </dd>
         </dl>
+
+
+        <form novalidate>
+            <input type="text" required>
+            <button type="submit">send</button>
+        </form>
     </section>
 
 
-    <style>
-    .form-group {
-        margin-bottom: 2rem;
-    }
-    </style>
     <section>
         <h2>Les champs</h2>
 
@@ -119,6 +126,200 @@
     </section>
 
 
+    <section>
+        <h2>Les boutons</h2>
+
+        <p>3 types de bouton</p>
+
+        <h3>Type "submit"</h3>
+        <div class="form-group">
+            <button>Envoyer le formulaire</button>
+            <button type="submit">Envoyer le formulaire</button>
+        </div>
+
+        <div>
+            <h2>Formulaire d'exemple</h2>
+
+            <form action="traitement.php">
+
+                <div class="form-group">
+                    <label for="champ-exemple">Votre Prénom :</label>
+                    <input type="text" name="champ-exemple" id="champ-exemple" placeholder="Saisir votre nom">
+                </div>
+
+                <button type="submit">Send</button>
+            </form>
+        </div>
+
+        <hr>
+
+
+
+        <h3>Type "reset"</h3>
+        <div class="form-group">
+            <button type="reset">Annuler</button>
+        </div>
+
+        <div>
+            <form action="traitement.php" method="get">
+
+                <div class="form-group">
+                    <label for="firstname">Votre Prénom :</label>
+                    <input type="text" name="firstname" id="firstname" value="Bruce" placeholder="Saisir votre nom">
+                </div>
+                <button type="reset">Cancel</button>
+                <button type="submit">Send</button>
+
+
+            </form>
+        </div>
+
+        <hr>
+
+
+
+        <h3>Type "button"</h3>
+        <div class="form-group">
+            <button type="button">Action</button>
+        </div>
+        <div class="form-group">
+            <button type="button" onclick="alert('Achtung Alarm !!!!');">Alert</button>
+        </div>
+
+
+
+    </section>
+
+
+
+    <section>
+        <h2>Types de champ</h2>
+
+        <div class="form-group">
+            <h3>Type "text"</h3>
+            <input type="text">
+        </div>
+
+        <div class="form-group">
+            <h3>Type "hidden"</h3>
+            <input type="hidden">
+        </div>
+
+        <div class="form-group">
+            <h3>Type "password"</h3>
+            <input type="password">
+        </div>
+
+        <div class="form-group">
+            <h3>Type "email"</h3>
+            <input type="email">
+        </div>
+
+        <div class="form-group">
+            <h3>Type "number"</h3>
+            <input type="number"><br>
+            <input type="number" value="42"><br>
+            <input type="number" max="10"><br>
+            <input type="number" min="10"><br>
+            <input type="number" min="0" max="10"><br>
+            <input type="number" min="0" max="10" step="2"><br>
+            <input type="number" step="0.000001"><br>
+        </div>
+
+        <div class="form-group">
+            <h3>Type "search"</h3>
+            <input type="search">
+        </div>
+
+        <div class="form-group">
+            <h3>Liste autocomplété</h3>
+            <input type="text" list="vehicules">
+
+            <datalist id="vehicules">
+                <option value="Ford">
+                <option value="Tesla">
+                <option value="Chevrolet">
+                <option value="GMC">
+            </datalist>
+        </div>
+
+        <div class="form-group">
+            <h3>Type "button"</h3>
+            <input type="button" value="test">
+        </div>
+        <div class="form-group">
+            <h3>Type "reset"</h3>
+            <input type="reset" value="cancel">
+        </div>
+        <div class="form-group">
+            <h3>Type "submit"</h3>
+            <input type="submit" value="send">
+        </div>
+
+        <div class="form-group">
+            <h3>Type "image"</h3>
+            <input type="image" src="./assets/images/unicorn.jpg" width="100">
+        </div>
+
+        <div class="form-group">
+            <h3>Type "date"</h3>
+            <input type="date">
+        </div>
+
+        <div class="form-group">
+            <h3>Type "time"</h3>
+            <input type="time">
+        </div>
+
+        <div class="form-group">
+            <h3>Type "url"</h3>
+            <input type="url">
+        </div>
+
+        <div class="form-group">
+            <h3>Type "month"</h3>
+            <input type="month">
+        </div>
+
+        <div class="form-group">
+            <h3>Type "color"</h3>
+            <input type="color">
+            <!-- #000000 -->
+            <!-- #FFFFFF -->
+            <!-- #FF0000 -->
+            <!-- #FF9900 -->
+        </div>
+
+        <div class="form-group">
+            <h3>Type "range"</h3>
+            <input type="range" min="-100" max="100" step="0.01" value="10">
+            <span id="range-value"></span>
+        </div>
+
+        <div class="form-group">
+            <h3>Type "tel"</h3>
+            <input type="tel">
+        </div>
+
+        <div class="form-group">
+            <h3>Type "week"</h3>
+            <input type="week">
+        </div>
+
+        <div class="form-group">
+            <h3>Type "file"</h3>
+            <input type="file"><br>
+            <input type="file" multiple><br>
+            <input type="file" accept="application/pdf"><br>
+            <input type="file" accept="image/jpeg,image/gif,image/png,application/pdf,image/x-eps"><br>
+        </div>
+
+    </section>
+
+
+
+
+
     <br>
     <br>
     <br>
@@ -128,5 +329,27 @@
     <br>
     <br>
     <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <script>
+    $(document).ready(function(){
+        let range = $("[type=range]");
+        let value = $("#range-value");
+
+        // Valeur au déplacement du curseur
+        range.on('input', function(){
+            value.html(range.val());
+        });
+
+        // Value au chargement de la page
+        value.html(range.val());
+    });
+    </script>
 </body>
 </html>

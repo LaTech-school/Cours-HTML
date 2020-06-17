@@ -54,6 +54,79 @@
         </dl>
     </section>
 
-    
+
+    <style>
+    .form-group {
+        margin-bottom: 2rem;
+    }
+    </style>
+    <section>
+        <h2>Les champs</h2>
+
+        <div class="form-group">
+            Un champ basic: le "input"<br>
+            <input>
+        </div>
+
+        <div class="form-group">
+            Input type "text"<br>
+            <input type="text">
+        </div>
+
+        <div class="form-group">
+            Attribut "name", donne un nom au champ et permet de générer la paire clé/valeur a transmettre au serveur.<br>
+            <input type="text" name="lastname">
+            <!-- site.com?lastname=Wayne -->
+        </div>
+
+        <div class="form-group">
+            Attribut "id", <br>
+            <input type="text" id="monChampA">
+        </div>
+
+        <div class="form-group">
+            <label for="field-firstname">Votre Prénom :</label>
+            <input type="text" id="field-firstname">
+        </div>
+
+        <!-- <div class="form-group">
+            <label for="firstname">Votre Prénom :</label>
+            <input type="text" name="firstname" id="firstname">
+        </div> -->
+
+        <div class="form-group">
+            Attribut "placeholder" <br>
+            <label for="firstname">Votre Prénom :</label>
+            <input type="text" name="firstname" id="firstname" placeholder="Saisir votre nom">
+        </div>
+        <div class="form-group">
+            <input type="text" name="firstname" placeholder="Saisir votre nom">
+        </div>
+
+
+        <div class="form-group">
+            Attribut "value" <br>
+            <label for="firstname">Votre Prénom :</label>
+            <input type="text" name="firstname" id="firstname" value="Bruce">
+        </div>
+
+        <div class="form-group">
+            Attribut "value" <br>
+            <label for="firstname">Votre Prénom :</label>
+            <input type="text" name="firstname" id="firstname" value="Bruce" placeholder="Saisir votre nom">
+        </div>
+
+    </section>
+
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
 </body>
 </html>

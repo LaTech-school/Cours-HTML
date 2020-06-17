@@ -317,9 +317,177 @@
     </section>
 
 
+    <section>
+        <h2>Textarea</h2>
+
+        <label for="bio">Biographie</label>
+        <textarea name="bio" id="bio" cols="30" rows="10"></textarea>
+        <textarea name="bio" id="bio" cols="30" rows="10" placeholder="Racontes ta vie...."></textarea>
+        <textarea name="bio" id="bio" cols="30" rows="10" placeholder="Racontes ta vie....">Lorem ipsum dolor sit amet consectetur adipisicing elit. At, doloribus voluptate itaque debitis, hic recusandae possimus repellat nobis consequuntur incidunt modi rerum culpa, rem dignissimos est fuga. Illum, quam adipisci!</textarea>
+        <!-- <textarea name="bio" id="bio" cols="30" rows="10" style="resize: none;"></textarea> -->
+        <!-- <textarea name="bio" id="bio" style="width: 100%; height: 400px"></textarea> -->
+    </section>
+
+
+    <section>
+        <h2>Liste de selection</h2>
+
+        <h3>Liste de selection simple</h3>
+
+        <select name="vehicule">
+            <option value="ford">Ford</option>
+            <option value="tesla">Tesla</option>
+            <option value="chevrolet">Chevrolet</option>
+            <option value="gmc">GMC</option>
+        </select>
+        <!-- site.com?vehicule=tesla -->
+
+        <select name="vehicule">
+            <option></option>
+            <option value="ford">Ford</option>
+            <option value="tesla">Tesla</option>
+            <option value="chevrolet">Chevrolet</option>
+            <option value="gmc">GMC</option>
+        </select>
+        <!-- site.com?vehicule= -->
+
+        <select name="vehicule">
+            <option>Select vehicule</option>
+            <option value="ford">Ford</option>
+            <option value="tesla">Tesla</option>
+            <option value="chevrolet">Chevrolet</option>
+            <option value="gmc">GMC</option>
+        </select>
+        <!-- site.com?vehicule=Select20%vehicule -->
+
+        <select name="vehicule">
+            <option value="">Select vehicule</option>
+            <option value="ford">Ford</option>
+            <option value="tesla">Tesla</option>
+            <option value="chevrolet">Chevrolet</option>
+            <option value="gmc">GMC</option>
+        </select>
+        <!-- site.com?vehicule= -->
 
 
 
+        <h3>Liste de selection multiple</h3>
+
+        <select name="vehicule" multiple>
+            <option value="">Select vehicule</option>
+            <option value="ford">Ford</option>
+            <option value="tesla">Tesla</option>
+            <option value="chevrolet">Chevrolet</option>
+            <option value="gmc">GMC</option>
+        </select>
+    </section>
+
+
+    <section>
+        <h2>Input : Checkbox</h2>
+
+        <div class="form-group">
+            <input type="checkbox">
+        </div>
+
+        <div class="form-group">
+            <input type="checkbox" id="cgv">
+            <label for="cgv">J'accepte les CGV</label>
+        </div>
+
+        <div class="form-group">
+            <label>
+                <input type="checkbox">
+                J'accepte les CGV
+            </label>
+        </div>
+
+        <div class="form-group">
+            <input type="checkbox" name="is-accepted"> accept cgv
+            <!-- site.com?is-accepted=on -->
+            <!-- site.com -->
+        </div>
+
+        <div class="form-group">
+            <input type="checkbox" name="is-accepted" value="yes"> accept cgv
+            <!-- site.com?is-accepted=yes -->
+            <!-- site.com -->
+        </div>
+
+        <div class="form-group">
+            <label>
+                <input type="checkbox" name="ford"> Ford
+            </label>
+            <label>
+                <input type="checkbox" name="tesla"> Tesla
+            </label>
+            <label>
+                <input type="checkbox" name="chevrolet"> Chevrolet
+            </label>
+            <label>
+                <input type="checkbox" name="gmc"> GMC
+            </label>
+
+        </div>
+    </section>
+
+
+    <section>
+        <h2>Input : radio</h2>
+
+        <div class="form-group">
+            <input type="radio">
+        </div>
+
+        <div class="form-group">
+            <label>
+                <input type="radio" name="gender" value="M"> Male
+            </label>
+            <label>
+                <input type="radio" name="gender" value="F"> Female
+            </label>
+            <label>
+                <input type="radio" name="gender" value="N"> Neither
+            </label>
+        </div>
+
+        <div class="form-group">
+            <label>
+                <input type="radio" name="vehicule" value="ford"> Ford
+            </label>
+            <label>
+                <input type="radio" name="vehicule" value="tesla"> Tesla
+            </label>
+            <label>
+                <input type="radio" name="vehicule" value="chevrolet"> Chevrolet
+            </label>
+            <label>
+                <input type="radio" name="vehicule" value="gmc"> GMC
+            </label>
+        </div>
+    </section>
+
+
+    <section>
+        <h2>Regrouper des champs</h2>
+
+        <form action="" method="get">
+
+            <fieldset>
+                <legend>Identité</legend>
+                <input type="text" name="firstname" placeholder="firstname"><br>
+                <input type="text" name="lastname" placeholder="lastname"><br>
+            </fieldset>
+            
+            <fieldset>
+                <legend>Identifiants</legend>
+                <input type="email" name="email" placeholder="email"><br>
+                <input type="password" name="password" placeholder="password"><br>
+            </fieldset>
+            
+            <button type="submit">Send</button>
+        </form>
+    </section>
     <br>
     <br>
     <br>

@@ -1,0 +1,37 @@
+Les URL 
+
+
+http://www.site.com/path/directory/file.html?param=value&other_param=new20%value#top
+
+
+http                : Schema (scheme)
+http://             : Protocol
+
+
+site                : Domaine
+.com                : TLD - Top LevelDomain
+site.com            : Nom de domaine 
+
+www                 : Sous domaine 
+
+/                   : Racine (root) de l'application sur le domaine "site.com"
+
+path/directory      : Repertoire dans lequel se trouve "file.html"
+
+file.html           : le fichier : ressource
+file                : Nom de fichier 
+.html               : Extension du fichier
+
+
+?                   : Transmission de paramètres POUR LE SERVEUR
+param=value         : un paramètres
+
+param               : la clé, le nom du paramètre 
+value               : la valeur associée au paramètre "param"
+
+&                   : séparateur de paramètres
+
+#                   : Ancres / Transmission de paramètres POUR LE CLIENT
+#top                : Ancre vers l'element html qui possède id="top"
+#param=value 
+

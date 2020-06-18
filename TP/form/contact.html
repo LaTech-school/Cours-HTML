@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keep in touch with us</title>
+</head>
+<body>
+    
+    <h1>Keep in touch with us</h1>
+    <p>Just say hello or ask us what can we do four you :)</p>
+
+    <form action="contact.php" method="post">
+        <fieldset>
+            <legend>Who are you ?</legend>
+
+            <div class="form-group">
+                <label for="firstname">Your firstname</label>
+                <input type="text" name="firstname" id="firstname" placeholder="Write your firstname">
+            </div>
+
+            <div class="form-group">
+                <label for="lastname">Your lastname</label>
+                <input type="text" name="lastname" id="lastname" placeholder="Write your lastname">
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Your coords</legend>
+
+            <div class="form-group">
+                <label for="email">Your email</label>
+                <input type="email" name="email" id="email" placeholder="Write your email">
+            </div>
+
+            <div class="form-group">
+                <label for="phone">Your phone number</label>
+                <input type="tel" name="phone" id="phone" placeholder="Write your phone number">
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Your message</legend>
+
+            <div class="form-group">
+                <label for="message">Your message</label>
+                <textarea name="message" id="message" cols="30" rows="10">Write your message</textarea>
+            </div>
+        </fieldset>
+
+        <button type="reset">Cancel</button>
+        <button type="submit">Send</button>
+    </form>
+
+</body>
+</html>

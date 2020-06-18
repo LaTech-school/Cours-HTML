@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register your new account</title>
+</head>
+<body>
+    
+    <h1>Register your new account</h1>
+    <p>Create your new account.</p>
+
+    <form action="signup.php" method="post">
+
+        <fieldset>
+            <legend>Who are you ?</legend>
+
+            <div class="form-group">
+                <label for="firstname">Your firstname</label>
+                <input type="text" name="firstname" id="firstname" placeholder="Write your firstname">
+            </div>
+
+            <div class="form-group">
+                <label for="lastname">Your lastname</label>
+                <input type="text" name="lastname" id="lastname" placeholder="Write your lastname">
+            </div>
+
+            <div class="form-group">
+                Your gender
+                <label><input type="radio" name="gender" value="M"> Male</label>
+                <label><input type="radio" name="gender" value="F"> Female</label>
+                <label><input type="radio" name="gender" value="N"> Neither</label>
+            </div>
+
+            <div class="form-group">
+                <label for="birthday">Your birthdate</label>
+                <select name="birth[day]" id="birthday">
+                    <option value="">Day</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="...">...</option>
+                </select>
+                <select name="birth[month]">
+                    <option value="">Month</option>
+                    <option value="1">January</option>
+                    <option value="2">February</option>
+                    <option value="3">March</option>
+                    <option value="4">April</option>
+                    <option value="...">...</option>
+                </select>
+                <select name="birth[year]">
+                    <option value="">year</option>
+                    <option value="2000">2000</option>
+                    <option value="1999">1999</option>
+                    <option value="1998">1998</option>
+                    <option value="1997">1997</option>
+                    <option value="1996">1996</option>
+                    <option value="...">...</option>
+                </select>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Login data</legend>
+
+            <div class="form-group">
+                <label for="email">Your e-mail address</label>
+                <input type="email" name="email" id="email" placeholder="Write your e-mail address">
+                <p>We use this e-mail address to identify you and contact you ;)</p>
+            </div>
+
+            <div class="form-group">
+                <label for="password">Your new password</label>
+                <input type="password" name="password" id="password" placeholder="Write your new password">
+            </div>
+
+            <div class="form-group">
+                <label for="password-confirmation">Confirm new password</label>
+                <input type="password" name="password-confirmation" id="password-confirmation" placeholder="Confirm your new password">
+            </div>
+        </fieldset>
+
+        <button type="reset">Cancel</button>
+        <button type="submit">Register my new account</button>
+    </form>
+</body>
+</html>

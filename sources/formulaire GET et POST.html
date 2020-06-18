@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire GET et POST</title>
+</head>
+<body>
+    
+    <h1>Formulaire GET et POST</h1>
+
+    <!-- <form> possède par défaut la méthode "GET" -->
+    <form action="traitement.php" method="GET">
+        <input type="text" name="firstname">
+        <input type="text" name="lastname">
+        <input type="password" name="password">
+
+        <button type="submit">Send</button>
+    </form>
+    <!-- site.com/traitement.php?firstname=Bruce&lastname=Wayne&password=CatWoman! -->
+    <!-- Les données sont transmisent (en claire) dans l'URL -->
+
+    <form action="traitement.php" method="POST">
+        <input type="text" name="firstname">
+        <input type="text" name="lastname">
+        <input type="password" name="password">
+
+        <button type="submit">Send</button>
+    </form>
+    <!-- site.com/traitement.php -->
+    <!-- Les données sont transmisent (cachées) dans l'entete HTTP -->
+</body>
+</html>

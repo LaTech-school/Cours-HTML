@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attributs "id", "class" et "name"</title>
+</head>
+<body>
+    
+
+    <h1>Attributs "id", "class" et "name"</h1>
+
+    <section>
+        <h2>Attribut "id"</h2>
+
+        <p>Permet de donner un identifiant à un élément HTML</p>
+        <!-- <div id="monIdentifiant"></div> -->
+        <p>Util pour cibler un élémnet HTML avec du JavaScript</p>
+        <!-- <span id="range-value"></span> /// $('#range-value') -->
+        <p>Permet d'identifier une ancre</p>
+        <p>Permet de lier une balise "label" à un champ de formulaire, pour amélioré l'expérience utilisateur.</p>
+
+        <form>
+            <label for="firstname" style="display: none;">Prénom</label><input type="text" name="firstname" id="firstname" placeholder="Prénom"><br>
+            <label>NOM : <input type="text" name="lastname"></label><br>
+        </form>
+
+    </section>
+
+    <section>
+        <h2>Attribut "class"</h2>
+        
+        <p>Permet d'identifier des élément HTML par un nom de classe.</p>
+        <p>Peut être multiple dans le document.</p>
+        <p>Plusieurs classe peuvent etre appliquées à un élément.</p>
+
+        <style>
+        .red {
+            border: 5px solid red;
+        }
+        .green {
+            border: 5px solid green;
+        }
+        .big {
+            border-width: 10px;
+        }
+        .small {
+            border-width: 1px;
+        }
+        </style>
+        <div class="red big">xxxx</div>
+        <div class="red">xxxx</div>
+        <div class="green big">xxxx</div>
+        <div class="small green">xxxx</div>
+    </section>
+
+    <section>
+        <h2>Attribut "name"</h2>
+        
+        <p>Permet d'identifier un element de façon non unique (obsolète)</p>
+        <div name="truc"></div>
+        <div name="machin"></div>
+        <div name="machin"></div>
+
+        <input type="text" name="lastname">
+    </section>
+
+    <section>
+        <h2>Exemple d'ancre</h2>
+        <style>
+        .test-ancre {
+            border-top: 3px solid red;
+            margin-bottom: 600px;
+        }
+        </style>
+
+        <nav>
+            <a href="#bas">Aller en bas</a>
+        </nav>
+
+        <div id="haut" class="test-ancre">Haut</div>
+        <div id="milieu" class="test-ancre">Milieu</div>
+        <div id="bas" class="test-ancre">Bas</div>
+
+        <nav>
+            <a href="#haut">Aller en haut</a>
+        </nav>
+    </section>
+</body>
+</html>
